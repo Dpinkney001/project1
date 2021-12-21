@@ -1,7 +1,7 @@
 import React from "react";
-import "C:\Users\thees\OneDrive\Desktop\project1\project1\src\index.html";
-import "C:\Users\thees\OneDrive\Desktop\project1\project1\src\HobbyPage.html";
-import "C:\Users\thees\OneDrive\Desktop\project1\project1\src\PastJobsPage.html";
+import "./Profile.js";
+import "./src/HobbyPage.js";
+import "./src/PastJobsPage.js";
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,13 +16,41 @@ export default function App() {
         <nav>
           <ul>
             <li>
-              <Link to="C:\Users\thees\OneDrive\Desktop\project1\project1\src\index.html">Home</Link>
+              <Link to="src\profile.js">Home</Link>
             </li>
             <li>
-              <Link to="C:\Users\thees\OneDrive\Desktop\project1\project1\src\HobbyPage.html">Hobby Page</Link>
+              <Link to="src\HobbyPage.js">Hobby Page</Link>
             </li>
             <li>
-              <Link to="C:\Users\thees\OneDrive\Desktop\project1\project1\src\PastJobsPage.html">Past Jobs Page</Link>
+              <Link to="src\PastJobsPage.js">Past Jobs Page</Link>
             </li>
           </ul>
         </nav>
+        <Switch>
+          <Route path="/about">
+            <Profile />
+          </Route>
+          <Route path="/users">
+            <HobbyPage />
+          </Route>
+          <Route path="/">
+            <PastJobsPage />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
+}
+
+  function HobbyPage() {
+    return <h2>HobbyPage</h2>;
+  }
+  
+  function Profile() {
+    return <h2>Profile</h2>;
+  }
+  
+  function PastJobsPage() {
+    return <h2>PastJobsPage</h2>;
+  }
+  
