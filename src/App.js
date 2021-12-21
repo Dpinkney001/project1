@@ -1,7 +1,7 @@
 import React from "react";
-import "./Profile.js";
-import "./src/HobbyPage.js";
-import "./src/PastJobsPage.js";
+import "./project1/src/Profile.js";
+import "./project1/src/HobbyPage.js";
+import "./project1/src/PastJobsPage.js";
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,13 +16,13 @@ export default function App() {
         <nav>
           <ul>
             <li>
-              <Link to="src\profile.js">Home</Link>
+              <Link to="./Profile.js">Home</Link>
             </li>
             <li>
-              <Link to="src\HobbyPage.js">Hobby Page</Link>
+              <Link to="./src/HobbyPage.js">Hobby Page</Link>
             </li>
             <li>
-              <Link to="src\PastJobsPage.js">Past Jobs Page</Link>
+              <Link to="./src/PastJobsPage.js">Past Jobs Page</Link>
             </li>
           </ul>
         </nav>

@@ -4,24 +4,10 @@ import react from "react";
 class HobbyPage extends React.Component {
     render() {
       return (
-        <link rel="stylesheet" type="text/css" href="C:\Users\thees\OneDrive\Desktop\project1\project1\src\hobbyPage.css">
+
    
     
-    </head>
-    <body style="background-color: blue">
-        
-        <div><h1> Navigation</h1></div>
-        <div><p>
-            <nav> <a href="PastJobsPage.html">Past Employment</a>  <a href="index.html">Main Page</div>
-        <p>
-            
-        </p>
-        
-        <p>
-            
-    <!-- End of body section HTML codes -->
-            
-        </p>
+    <body>
         <h2>Video of late night and early morning shenanigans</h2>
         <div><p> 
             A old video of myself driving a BMW 328xi at 4:30am back in 2010

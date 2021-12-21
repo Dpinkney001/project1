@@ -4,12 +4,11 @@ import React from 'react';
 export default function App() {
     return (
         <div>
-            <div>
         <li style="font-family: Italic; color: gold; font-size: 20px">
             <p class="basicStats"><strong>Age: 30. Hometown: Bronx, N.Y</strong>
             https://www.linkedin.com/in/duvall-pinkney-16949260
             </p>
-            </div>
+            
             
 	
 	        <li style="font-family: Italic; color: gold; font-size: 20px">Interests:
@@ -54,5 +53,4 @@ export default function App() {
 	        </li>
         </div>
     );
-  </
   }
