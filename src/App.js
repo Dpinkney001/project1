@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "C:\Users\thees\OneDrive\Desktop\project1\project1\src\index.html";
+import "C:\Users\thees\OneDrive\Desktop\project1\project1\src\HobbyPage.html";
+import "C:\Users\thees\OneDrive\Desktop\project1\project1\src\PastJobsPage.html";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="C:\Users\thees\OneDrive\Desktop\project1\project1\src\index.html">Home</Link>
+            </li>
+            <li>
+              <Link to="C:\Users\thees\OneDrive\Desktop\project1\project1\src\HobbyPage.html">Hobby Page</Link>
+            </li>
+            <li>
+              <Link to="C:\Users\thees\OneDrive\Desktop\project1\project1\src\PastJobsPage.html">Past Jobs Page</Link>
+            </li>
+          </ul>
+        </nav>
